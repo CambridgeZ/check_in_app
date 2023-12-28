@@ -18,6 +18,11 @@
 			"style": {
 				"navigationBarTitleText": "uni-app"
 			}
+		},{
+			"path":"pages/Register",
+			"style":{
+				"navigationBarTitleText": "uni-app"
+			}
 		}
 	],
 	"globalStyle": {

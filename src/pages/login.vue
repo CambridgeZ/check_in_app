@@ -5,6 +5,7 @@
             <input type="text" v-model="username" placeholder="Username" required>
             <input type="password" v-model="password" placeholder="Password" required>
             <button type="submit">Login</button>
+            <a @click="goToRegisterPage">Register</a> 
         </form>
     </div>
 </template>
@@ -56,6 +57,11 @@ export default {
                         icon: 'none'
                     });
                 });
+        },
+        goToRegisterPage() {
+            uni.navigateTo({
+                url: '/pages/Register' 
+            });
         }
     }
 };
@@ -92,5 +98,10 @@ button {
     color: #fff;
     border: none;
     cursor: pointer;
+}
+
+a{
+    color: #007bff;
+     text-align: center;
 }
 </style>
